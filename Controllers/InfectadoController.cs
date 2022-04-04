@@ -29,6 +29,6 @@ namespace ApiMongoDB.Controllers
         {
             var infectados = _infectadosCollection.Find(Builders<Infectado>.Filter.Empty).ToList();
             return Ok(infectados);
-        }          
+        }
     }
 }
